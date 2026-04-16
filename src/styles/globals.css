@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;500;700&family=Oxanium:wght@400;700;800&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap');
+
+@theme {
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-serif: "Courier Prime", serif;
+  --font-display: "Oxanium", sans-serif;
+  --font-art: "Syne", sans-serif;
+
+  /* Semantic Colors */
+  --color-app-bg: #050505;
+  --color-app-accent: #f59e0b; /* Amber 500 */
+  --color-app-accent-muted: rgba(245, 158, 11, 0.4);
+  --color-app-border: rgba(120, 53, 15, 0.4); /* Amber 900/40 */
+  --color-app-surface: rgba(255, 255, 255, 0.05);
+  --color-app-text: #d1d5db; /* Gray 300 */
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-app-bg);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-app-border);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-app-accent);
+}
