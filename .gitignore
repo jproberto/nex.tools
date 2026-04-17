@@ -6,3 +6,7 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Custom exclusions
+src/data/rituais.json
+src/data/habilidades.json
