@@ -60,8 +60,8 @@ export default function NexTools() {
     if (activeSubView === 'rituais') {
       return RITUAIS.filter(r => {
         const matchesSearch = r.nome.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                            r.elemento.toLowerCase().includes(searchQuery.toLowerCase());
-        const matchesElement = selectedElements.length === 0 || selectedElements.includes(r.elemento);
+                            r.elemento.some(e => e.toLowerCase().includes(searchQuery.toLowerCase()));
+        const matchesElement = selectedElements.length === 0 || r.elemento.some(e => selectedElements.includes(e));
         const matchesCircle = selectedCircles.length === 0 || selectedCircles.includes(r.circulo);
         const matchesSource = selectedSources.length === 0 || selectedSources.includes(r.fonte);
         return matchesSearch && matchesElement && matchesCircle && matchesSource;

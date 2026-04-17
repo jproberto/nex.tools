@@ -22,9 +22,14 @@ export const DataGrid = ({ data, activeSubView, selectedItem, setSelectedItem, i
     let sortableItems = [...data];
     if (sortConfig !== null) {
       sortableItems.sort((a, b) => {
-        const aValue = (a as any)[sortConfig.key];
-        const bValue = (b as any)[sortConfig.key];
+        let aValue = (a as any)[sortConfig.key];
+        let bValue = (b as any)[sortConfig.key];
         
+        if (sortConfig.key === 'elemento') {
+          aValue = Array.isArray(aValue) ? aValue.join(', ') : aValue;
+          bValue = Array.isArray(bValue) ? bValue.join(', ') : bValue;
+        }
+
         if (aValue === bValue) return 0;
         
         // Handle missing values
@@ -113,9 +118,13 @@ export const DataGrid = ({ data, activeSubView, selectedItem, setSelectedItem, i
               {isRitual(item) ? (
                 <>
                   <td className="p-4">
-                    <span className="px-2 py-0.5 border border-app-border text-[9px]">
-                      {item.elemento}
-                    </span>
+                    <div className="flex flex-wrap gap-1">
+                      {item.elemento.map((el, idx) => (
+                        <span key={idx} className="px-2 py-0.5 border border-app-border text-[9px]">
+                          {el}
+                        </span>
+                      ))}
+                    </div>
                   </td>
                   <td className="p-4">
                     <span className="px-2 py-0.5 border border-app-border text-[9px]">

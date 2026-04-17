@@ -15,7 +15,7 @@ export const DetailPanel = ({ item, onClose }: DetailPanelProps) => {
         <div className="flex items-center gap-2">
           {isRitual(item) ? <Brain className="w-4 h-4 text-app-accent" /> : <Sparkles className="w-4 h-4 text-app-accent" />}
           <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-app-accent">
-            {isRitual(item) ? `${item.elemento} • ${item.circulo}º Círculo` : `${item.tipo} • ${item.categoria}`}
+            {isRitual(item) ? `${item.elemento.join(' // ')} • ${item.circulo}º Círculo` : `${item.tipo} • ${item.categoria}`}
           </span>
         </div>
         <h2 className="text-4xl font-black uppercase tracking-tighter italic">{item.nome}</h2>

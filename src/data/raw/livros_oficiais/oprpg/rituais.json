@@ -30,8 +30,7 @@
           "alvo": "1 aliado"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a102",
@@ -60,8 +59,7 @@
         "requisito": "4º Círculo",
         "descricao": "Você pode alterar ou apagar memórias de até 24 horas atrás."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a103",
@@ -99,8 +97,7 @@
         "requisito": "3º Círculo e afinidade",
         "descricao": "O bônus de dano aumenta para +4d6."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a104",
@@ -135,8 +132,7 @@
         "requisito": "3º Círculo e afinidade",
         "descricao": "O item recebe três modificações simultâneas."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a105",
@@ -168,50 +164,7 @@
           "alvo": "Seres à escolha"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a205",
-    "nome": "Apagar as Luzes",
-    "elemento": [
-      "Morte"
-    ],
-    "circulo": 1,
-    "execucao": "Padrão",
-    "alcance": "Pessoal",
-    "alvo": "Você",
-    "duracao": "Instantânea",
-    "referencia_pagina": "(pág. 50)",
-    "fonte": "SaH",
-    "descricao": "Você traz a escuridão da Morte. Apaga qualquer fonte de luz em alcance curto e recebe visão no escuro.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 1,
-        "descricao": "Apaga luzes ao redor e ganha visão no escuro."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 3,
-        "requisito": "2º Círculo",
-        "descricao": "Muda o alcance para longo.",
-        "modificacoes": {
-          "alcance": "Longo"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 6,
-        "requisito": "3º Círculo",
-        "descricao": "Como discente e até 5 aliados recebem visão no escuro.",
-        "modificacoes": {
-          "alcance": "Longo",
-          "alvo": "Você e até 5 aliados"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a106",
@@ -246,8 +199,7 @@
         "requisito": "4º Círculo e afinidade",
         "descricao": "O bônus aumenta para +3."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a107",
@@ -282,8 +234,7 @@
         "requisito": "3º Círculo e afinidade",
         "descricao": "Bônus de +5 em ataque, +2 na margem e +1 no multiplicador de crítico."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a108",
@@ -318,51 +269,7 @@
         "requisito": "4º Círculo e afinidade",
         "descricao": "Fornece +15 na Defesa e RD 10 contra danos físicos."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a210",
-    "nome": "Aurora da Verdade",
-    "elemento": [
-      "Conhecimento"
-    ],
-    "circulo": 2,
-    "execucao": "Padrão",
-    "alcance": "Curto",
-    "alvo": "Área: esfera 3m",
-    "duracao": "Sustentada",
-    "resistencia": "Vontade parcial",
-    "referencia_pagina": "(pág. 53)",
-    "fonte": "SaH",
-    "descricao": "O Conhecimento não permite segredos. Revela a verdade na área e alvos falham em testes de Enganação/mentiras.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 3,
-        "descricao": "Revela invisibilidade e impede mentiras."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 6,
-        "descricao": "Alcance médio, esfera 9m e o conjurador não é afetado.",
-        "modificacoes": {
-          "alcance": "Médio",
-          "alvo": "Área: esfera 9m"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 10,
-        "requisito": "4º Círculo e afinidade",
-        "descricao": "Alcance longo e duração cena. Conjurador ouve tudo na área.",
-        "modificacoes": {
-          "alcance": "Longo",
-          "duracao": "Cena"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a109",
@@ -401,8 +308,7 @@
           "alvo": "Seres selecionados"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a110",
@@ -440,8 +346,7 @@
         "requisito": "3º Círculo e afinidade",
         "descricao": "O bônus aumenta para +5 em testes de perícia."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a111",
@@ -480,8 +385,7 @@
           "resistencia": "Fortitude reduz à metade"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a112",
@@ -510,8 +414,7 @@
         "requisito": "3º Círculo",
         "descricao": "Cria até 6 laços, e você pode escolher alvos diferentes para cada um (máximo 2 por alvo)."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a113",
@@ -553,8 +456,7 @@
           "alvo": "Pessoas selecionadas"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a114",
@@ -596,8 +498,7 @@
           "alvo": "Área: Explosão 6m"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a115",
@@ -635,8 +536,7 @@
           "alvo": "Até 5 seres"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a116",
@@ -668,8 +568,7 @@
           "alvo": "Até 100 seres/objetos"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a117",
@@ -701,51 +600,7 @@
           "resistencia": "Fortitude reduz à metade"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a209",
-    "nome": "Desfazer Sinapses",
-    "elemento": [
-      "Conhecimento"
-    ],
-    "circulo": 1,
-    "execucao": "Padrão",
-    "alcance": "Curto",
-    "alvo": "1 ser",
-    "duracao": "Instantânea",
-    "resistencia": "Vontade parcial",
-    "referencia_pagina": "(pág. 53)",
-    "fonte": "SaH",
-    "descricao": "A Entidade do Conhecimento devora trilhões de sinapses. Causa 2d6+2 de dano de Conhecimento e deixa o alvo frustrado.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 1,
-        "descricao": "2d6+2 de dano e condição frustrado."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 3,
-        "requisito": "2º Círculo",
-        "descricao": "Alcance longo, dano 3d6+3 e afeta até 5 seres.",
-        "modificacoes": {
-          "alcance": "Longo",
-          "alvo": "Até 5 seres"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 6,
-        "requisito": "3º Círculo",
-        "descricao": "Alcance extremo, dano 8d6+8 e deixa alvos esmorecidos.",
-        "modificacoes": {
-          "alcance": "Extremo"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a118",
@@ -786,8 +641,7 @@
           "duracao": "Cena"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a119",
@@ -810,8 +664,7 @@
         "custo": 10,
         "descricao": "Você recebe rodadas extras durante o efeito (geralmente 3 rodadas)."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a120",
@@ -840,8 +693,7 @@
         "requisito": "2º Círculo",
         "descricao": "Aumenta o limite de dano que pode ser acumulado e a resistência muda para 'Fortitude reduz a 1/4'."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a121",
@@ -873,8 +725,7 @@
           "alcance": "Linha: 30m"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a122",
@@ -906,8 +757,7 @@
           "alvo": "Cria 5 duplicatas"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a123",
@@ -936,8 +786,7 @@
         "requisito": "2º Círculo",
         "descricao": "O alvo obedece a uma sugestão razoável por vez."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a124",
@@ -969,52 +818,7 @@
           "duracao": "Cena"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a201",
-    "nome": "Esfolar",
-    "elemento": [
-      "Sangue"
-    ],
-    "circulo": 1,
-    "execucao": "Padrão",
-    "alcance": "Curto",
-    "alvo": "1 ser",
-    "duracao": "Instantânea",
-    "resistencia": "Reflexos parcial",
-    "referencia_pagina": "(pág. 48)",
-    "fonte": "SaH",
-    "descricao": "Você usa seu corpo como passagem para o Sangue, projetando agulhas e lâminas rubras. Causa 3d4+3 pontos de dano de corte e deixa o alvo sangrando. Se passar no teste, sofre metade do dano e evita a condição.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 1,
-        "descricao": "3d4+3 de dano de corte e sangramento."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 3,
-        "requisito": "2º Círculo",
-        "descricao": "Alcance médio, dano 5d4+5 e alvo muda para explosão com 6m de raio.",
-        "modificacoes": {
-          "alcance": "Médio",
-          "alvo": "Área: Explosão 6m"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 6,
-        "requisito": "3º Círculo",
-        "descricao": "Alcance longo, dano 10d4+10 e alvo explosão 6m. Resistência não evita a condição.",
-        "modificacoes": {
-          "alcance": "Longo",
-          "alvo": "Área: Explosão 6m"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a125",
@@ -1043,50 +847,7 @@
         "requisito": "2º Círculo",
         "descricao": "Aumenta a duração e a penalidade afeta também testes de perícia baseados em destreza."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a207",
-    "nome": "Fedor Pútrido",
-    "elemento": [
-      "Morte"
-    ],
-    "circulo": 3,
-    "execucao": "Padrão",
-    "alcance": "Pessoal",
-    "alvo": "Você",
-    "duracao": "Sustentada",
-    "referencia_pagina": "(pág. 52)",
-    "fonte": "SaH",
-    "descricao": "Seu corpo assume o odor da decomposição. Recebe +5 em Furtividade e +10 em Enganação (ficar parado). Sofre 1d4 de dano de Morte por rodada.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 6,
-        "descricao": "Bônus em Furtividade/Enganação mas sofre dano."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 10,
-        "descricao": "Alcance toque, alvo 1 ser voluntário.",
-        "modificacoes": {
-          "alcance": "Toque",
-          "alvo": "1 ser voluntário"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 15,
-        "requisito": "Afinidade",
-        "descricao": "Alcance curto, alvo até 5 seres voluntários.",
-        "modificacoes": {
-          "alcance": "Curto",
-          "alvo": "Até 5 seres voluntários"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a126",
@@ -1109,8 +870,7 @@
         "custo": 10,
         "descricao": "Causa 100 de dano de Morte e puxa seres na direção do vácuo."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a127",
@@ -1139,8 +899,7 @@
         "requisito": "2º Círculo",
         "descricao": "Se o alvo for uma criatura de Sangue, o efeito é ignorado, mas causa mais dano a outros tipos de seres."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a128",
@@ -1163,8 +922,7 @@
         "custo": 6,
         "descricao": "Você se torna Grande, recebe bônus em testes de ataque e dano físico, e ganha RD."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a129",
@@ -1193,8 +951,7 @@
         "requisito": "2º Círculo",
         "descricao": "Fornece penalidade de -20 para inimigos que tentarem te atacar furtivamente."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a130",
@@ -1227,8 +984,7 @@
           "alvo": "Seres selecionados"
         }
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a131",
@@ -1257,8 +1013,7 @@
         "requisito": "15d12+15 dano",
         "descricao": "Dano aumenta para 15d12+15."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a132",
@@ -1287,8 +1042,7 @@
         "requisito": "3º Círculo",
         "descricao": "Dano aumenta para 10d6 ou permite ver/ouvir pelos sentidos do alvo."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a133",
@@ -1311,8 +1065,7 @@
         "custo": 10,
         "descricao": "Cria uma cópia idêntica que age por uma cena."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a134",
@@ -1335,48 +1088,7 @@
         "custo": 10,
         "descricao": "Corta o alvo, ignorando resistências se falhar no teste."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a206",
-    "nome": "Língua Morta",
-    "elemento": [
-      "Morte"
-    ],
-    "circulo": 2,
-    "execucao": "Padrão",
-    "alcance": "Toque",
-    "alvo": "1 cadáver",
-    "duracao": "Sustentada",
-    "referencia_pagina": "(pág. 51)",
-    "fonte": "SaH",
-    "descricao": "Você faz o Lodo de Morte reanimar cordas vocais. Permite fazer até três perguntas ao cadáver.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 3,
-        "descricao": "Até 3 perguntas para um cadáver."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 6,
-        "descricao": "Limite de 4 perguntas. Cadáver vira um enraizado ao fim.",
-        "modificacoes": {
-          "duracao": "Até 4 perguntas"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 10,
-        "requisito": "4º Círculo e afinidade",
-        "descricao": "Limite de 5 perguntas. Cadáver vira uma marionete ao fim.",
-        "modificacoes": {
-          "duracao": "Até 5 perguntas"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a135",
@@ -1405,8 +1117,7 @@
         "requisito": "3º Círculo",
         "descricao": "Aumenta o raio ou permite localizar por um período maior."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a136",
@@ -1435,38 +1146,7 @@
         "requisito": "2º Círculo",
         "descricao": "Cria esferas brilhantes que podem ser movidas e ofuscam inimigos."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a204",
-    "nome": "Martírio de Sangue",
-    "elemento": [
-      "Sangue"
-    ],
-    "circulo": 4,
-    "execucao": "Padrão",
-    "alcance": "Pessoal",
-    "alvo": "Você",
-    "duracao": "Veja texto",
-    "resistencia": null,
-    "referencia_pagina": "(pág. 50)",
-    "fonte": "SaH",
-    "descricao": "O sacrifício supremo. Recebe bônus massivos em combate, cura acelerada e PV temporários, mas ao fim da cena você se torna permanentemente uma criatura de Sangue.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 10,
-        "descricao": "Recebe +10 em ataque/dano, Defesa 30 e 30 PV temporários."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 15,
-        "requisito": "Afinidade",
-        "descricao": "Bônus aumenta para +20 e PV temporários para 50."
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a137",
@@ -1495,8 +1175,7 @@
         "requisito": "4º Círculo",
         "descricao": "Duração aumenta para 1 dia e permite vasculhar memórias profundas."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a138",
@@ -1524,84 +1203,7 @@
         "custo": 6,
         "descricao": "Dano aumenta para 6d8."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a216",
-    "nome": "Milagre Ionizante",
-    "elemento": [
-      "Energia"
-    ],
-    "circulo": 3,
-    "execucao": "Completa",
-    "alcance": "Toque",
-    "alvo": "1 ser",
-    "duracao": "Instantânea",
-    "referencia_pagina": "(pág. 56)",
-    "fonte": "SaH",
-    "descricao": "Usa o caos da Energia para restaurar a ordem biológica. Remove quase qualquer condição negativa do alvo.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 6,
-        "descricao": "Remove uma condição negativa."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 8,
-        "descricao": "Remove a condição sem necessidade de teste de Fortitude."
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 11,
-        "requisito": "4º Círculo",
-        "descricao": "Remove todas as condições do alvo simultaneamente."
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a215",
-    "nome": "Mutar",
-    "elemento": [
-      "Energia"
-    ],
-    "circulo": 3,
-    "execucao": "Padrão",
-    "alcance": "Pessoal",
-    "alvo": "Você",
-    "duracao": "Cena",
-    "referencia_pagina": "(pág. 56)",
-    "fonte": "SaH",
-    "descricao": "Distorce as ondas sonoras e de luz ao seu redor para inibir sua presença. Recebe +10 em Furtividade.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 6,
-        "descricao": "Fornece +10 em Furtividade."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 10,
-        "descricao": "Alcance toque, alvo 1 ser.",
-        "modificacoes": {
-          "alcance": "Toque",
-          "alvo": "1 ser"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 15,
-        "requisito": "Afinidade",
-        "descricao": "Alcance curto, alvo até 5 seres.",
-        "modificacoes": {
-          "alcance": "Curto",
-          "alvo": "Até 5 seres"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a139",
@@ -1630,8 +1232,7 @@
         "requisito": "2º Círculo",
         "descricao": "Aliados enxergam através da nuvem."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a140",
@@ -1660,51 +1261,7 @@
         "requisito": "2º Círculo",
         "descricao": "Alvo pode fazer um ataque adicional por rodada."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a203",
-    "nome": "Odor da Caçada",
-    "elemento": [
-      "Sangue"
-    ],
-    "circulo": 3,
-    "execucao": "Padrão",
-    "alcance": "Pessoal",
-    "alvo": "Você",
-    "duracao": "Cena",
-    "resistencia": null,
-    "referencia_pagina": "(pág. 49)",
-    "fonte": "SaH",
-    "descricao": "Suas pupilas dilatam e seu faro se intensifica. Recebe faro, +5 em Atletismo em perseguições e não perde PV por esforço extra. Na cena seguinte, sofre efeitos de fome e sede.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 6,
-        "descricao": "Faro, bônus em Atletismo e esforço sem dano."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 10,
-        "descricao": "Muda o alcance para toque e o alvo para 1 ser.",
-        "modificacoes": {
-          "alcance": "Toque",
-          "alvo": "1 ser"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 15,
-        "requisito": "Afinidade",
-        "descricao": "Muda o alcance para curto e o alvo para até 5 seres.",
-        "modificacoes": {
-          "alcance": "Curto",
-          "alvo": "Até 5 seres"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a141",
@@ -1733,43 +1290,7 @@
         "requisito": "2º Círculo",
         "descricao": "Duração aumenta para 1 minuto e permite fazer mais perguntas."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a213",
-    "nome": "Overclock",
-    "elemento": [
-      "Energia"
-    ],
-    "circulo": 1,
-    "execucao": "Reação",
-    "alcance": "Pessoal",
-    "alvo": "Você",
-    "duracao": "Instantânea",
-    "referencia_pagina": "(pág. 55)",
-    "fonte": "SaH",
-    "descricao": "Força um item tecnológico a superar limites. Se falhar no teste de Tecnologia contra o item, ele se torna imprevisível.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 1,
-        "descricao": "Desafia um item tecnológico para agir de forma específica."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 3,
-        "requisito": "2º Círculo",
-        "descricao": "Só falha se errar o teste duas vezes."
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 6,
-        "requisito": "3º Círculo",
-        "descricao": "Só falha se errar o teste três vezes."
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a142",
@@ -1797,8 +1318,7 @@
         "custo": 6,
         "descricao": "Muda a área para um cilindro e causa 13d6 de dano."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a143",
@@ -1827,8 +1347,7 @@
         "requisito": "2º Círculo",
         "descricao": "Alvo executa um comando mais complexo como 'Siga-me' ou 'Ataque'."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a144",
@@ -1857,8 +1376,7 @@
         "requisito": "2º Círculo",
         "descricao": "Permite arremessar múltiplos objetos metálicos contra inimigos."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a145",
@@ -1881,8 +1399,7 @@
         "custo": 10,
         "descricao": "Assume controle do corpo do alvo por um dia."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a146",
@@ -1905,48 +1422,7 @@
         "custo": 10,
         "descricao": "Causa dano mental e medo persistente na área."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a212",
-    "nome": "Pronunciar Sigilo",
-    "elemento": [
-      "Conhecimento"
-    ],
-    "circulo": 4,
-    "execucao": "Padrão",
-    "alcance": "Curto",
-    "alvo": "1 ser",
-    "duracao": "Instantânea",
-    "resistencia": "Vontade parcial",
-    "referencia_pagina": "(pág. 54)",
-    "fonte": "SaH",
-    "descricao": "Você profana a realidade com Sigilos do Outro Lado. Escolha um efeito terrível: Esquecer, Cegar ou Inexistir.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 10,
-        "descricao": "Escolha entre Esquecer (atordoado), Cegar ou Inexistir (desaparecer brevemente)."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 15,
-        "descricao": "Alcance extremo.",
-        "modificacoes": {
-          "alcance": "Extremo"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 20,
-        "descricao": "Alvo para até 5 seres.",
-        "modificacoes": {
-          "alvo": "Até 5 seres"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a147",
@@ -1975,42 +1451,7 @@
         "requisito": "4º Círculo",
         "descricao": "Dano aumenta para 10d6 e fornece bônus massivo em testes de resistência."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a211",
-    "nome": "Relembrar Fragmento",
-    "elemento": [
-      "Conhecimento"
-    ],
-    "circulo": 3,
-    "execucao": "Padrão",
-    "alcance": "Toque",
-    "alvo": "1 objeto",
-    "duracao": "Instantânea",
-    "referencia_pagina": "(pág. 54)",
-    "fonte": "SaH",
-    "descricao": "Você restaura o texto de um objeto ilegível ou danificado permanentemente.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 6,
-        "descricao": "Restaura memórias e textos de objetos."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 10,
-        "descricao": "Objeto restaurado até o fim da missão."
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 15,
-        "requisito": "Afinidade",
-        "descricao": "Altera ou apaga o conteúdo original permanentemente."
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a148",
@@ -2039,83 +1480,7 @@
         "requisito": "Reação",
         "descricao": "Pode ser usado como reação para desviar de ataques."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a202",
-    "nome": "Sede de Adrenalina",
-    "elemento": [
-      "Sangue"
-    ],
-    "circulo": 2,
-    "execucao": "Reação",
-    "alcance": "Pessoal",
-    "alvo": "Você",
-    "duracao": "Instantânea",
-    "resistencia": null,
-    "referencia_pagina": "(pág. 49)",
-    "fonte": "SaH",
-    "descricao": "Você troca a racionalidade por um físico sobrenatural. Ao falhar em Acrobatismo ou Atletismo, pode repetir o teste usando Presença. Ou, ao sofrer dano de impacto, reduz esse dano em 20.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 3,
-        "descricao": "Repete teste físico com Presença ou reduz 20 de dano de impacto."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 6,
-        "descricao": "Redução de dano de impacto aumenta para 40."
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 10,
-        "requisito": "4º Círculo e afinidade",
-        "descricao": "Redução de dano de impacto aumenta para 70."
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a208",
-    "nome": "Singularidade Temporal",
-    "elemento": [
-      "Morte"
-    ],
-    "circulo": 4,
-    "execucao": "Padrão",
-    "alcance": "Curto",
-    "alvo": "1 objeto não paranormal Médio",
-    "duracao": "Instantânea",
-    "resistencia": "Fortitude parcial",
-    "referencia_pagina": "(pág. 52)",
-    "fonte": "SaH",
-    "descricao": "Distorce o tempo em um objeto para apodrecê-lo ou restaurá-lo instantaneamente.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 10,
-        "descricao": "Afeta um objeto de tamanho Médio."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 15,
-        "descricao": "Tamanho Grande.",
-        "modificacoes": {
-          "alvo": "1 objeto Grande"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 20,
-        "descricao": "Tamanho Enorme.",
-        "modificacoes": {
-          "alvo": "1 objeto Enorme"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a149",
@@ -2144,8 +1509,7 @@
         "requisito": "2º Círculo",
         "descricao": "Ilusão complexa com movimento e sons combinados."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a150",
@@ -2168,8 +1532,7 @@
         "custo": 10,
         "descricao": "Teleporte para qualquer lugar, com margem de erro dependendo do conhecimento do destino."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a151",
@@ -2197,8 +1560,7 @@
         "custo": 11,
         "descricao": "Aumenta raio para 9m e dano para 6d6."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a152",
@@ -2221,8 +1583,7 @@
         "custo": 6,
         "descricao": "Manipula grandes massas de água."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a153",
@@ -2251,50 +1612,7 @@
         "requisito": "3º Círculo",
         "descricao": "Recupera até 50 PV."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
-  },
-  {
-    "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a214",
-    "nome": "Tremeluzir",
-    "elemento": [
-      "Energia"
-    ],
-    "circulo": 2,
-    "execucao": "Padrão",
-    "alcance": "Pessoal",
-    "alvo": "Você",
-    "duracao": "Sustentada",
-    "referencia_pagina": "(pág. 55)",
-    "fonte": "SaH",
-    "descricao": "Sua matéria oscila em fótons. Permite atravessar objetos sólidos e fornece RD. Sofre 1d4 de dano de Energia por rodada.",
-    "versoes": [
-      {
-        "tipo": "Base",
-        "custo": 3,
-        "descricao": "Atravessa sólidos com chance de falha. Ganha RD contra ataques físicos."
-      },
-      {
-        "tipo": "Discente",
-        "custo": 6,
-        "descricao": "Alcance toque e alvo ser voluntário.",
-        "modificacoes": {
-          "alcance": "Toque",
-          "alvo": "1 ser voluntário"
-        }
-      },
-      {
-        "tipo": "Verdadeira",
-        "custo": 10,
-        "requisito": "4º Círculo",
-        "descricao": "Alcance curto e alvo até 5 seres voluntários.",
-        "modificacoes": {
-          "alcance": "Curto",
-          "alvo": "Até 5 seres voluntários"
-        }
-      }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a154",
@@ -2323,8 +1641,7 @@
         "requisito": "4º Círculo",
         "descricao": "Alvo recebe uma ação padrão adicional por rodada."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a155",
@@ -2352,8 +1669,7 @@
         "custo": 11,
         "descricao": "Enxame se torna Enorme e ganha voo."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   },
   {
     "id": "f588ea41-1a6f-4d6d-8c10-8b10fcd6a156",
@@ -2382,7 +1698,6 @@
         "requisito": "4º Círculo",
         "descricao": "Alvo fica paralisado (congelado no tempo)."
       }
-    ],
-    "grupo_fonte": "Livros Oficiais"
+    ]
   }
 ]

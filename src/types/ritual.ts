@@ -21,7 +21,7 @@ export interface RitualVersao {
 export interface Ritual {
   id: string;
   nome: string;
-  elemento: Elemento;
+  elemento: Elemento[];
   circulo: 1 | 2 | 3 | 4;
   execucao: string;
   alcance: string;
