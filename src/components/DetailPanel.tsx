@@ -28,13 +28,13 @@ export const DetailPanel = ({ item, onClose }: DetailPanelProps) => {
           <DetailField label="Alvo" value={item.alvo} />
           <DetailField label="Duração" value={item.duracao} />
           <DetailField label="Resistência" value={item.resistencia || 'Nenhuma'} />
-          <DetailField label="Fonte" value={`${item.fonte} (${item.referencia_pagina})`} />
+          <DetailField label="Fonte" value={`${item.fonte} ${item.referencia_pagina}`} />
         </div>
       ) : (
         <div className="grid grid-cols-2 gap-4 text-[10px] uppercase tracking-widest font-bold opacity-60">
           <DetailField label="Pré-Requisito" value={item.requisito || 'N/A'} />
           <DetailField label="Custo" value={item.custo || 'N/A'} />
-          <DetailField label="Fonte" value={`${item.fonte} (${item.referencia_pagina})`} colSpan={2} />
+          <DetailField label="Fonte" value={`${item.fonte} ${item.referencia_pagina}`} colSpan={2} />
           {item.pericias && <DetailField label="Perícias" value={item.pericias} colSpan={2} />}
           {item.itens_iniciais && <DetailField label="Itens Iniciais" value={item.itens_iniciais} colSpan={2} />}
         </div>

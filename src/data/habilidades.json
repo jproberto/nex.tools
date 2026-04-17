@@ -1,5 +1,16 @@
 [
   {
+    "id": "e4587a80-1a6f-4d6d-8c10-8b10fcd6a004",
+    "nome": "Acadêmico",
+    "tipo": "Origem",
+    "categoria": "Civil",
+    "pericias": "Ciências, Investigação",
+    "descricao": "Saber é Poder. Quando faz um teste de perícia usando Intelecto (exceto Luta e Pontaria), você pode gastar 2 PE para receber +5 nesse teste.",
+    "itens_iniciais": "Livro de anotações, caneta",
+    "fonte": "OPRPG",
+    "referencia_pagina": "(pág. 24)"
+  },
+  {
     "id": "e4587a80-1a6f-4d6d-8c10-8b10fcd6a001",
     "nome": "Ataque Especial",
     "tipo": "Classe",
@@ -8,17 +19,7 @@
     "custo": "1 PE",
     "descricao": "Quando faz um ataque, você pode gastar 1 PE para receber +5 no teste de ataque ou no dano. Conforme seu NEX aumenta, você pode gastar mais PE para aumentar o bônus.",
     "fonte": "OPRPG",
-    "referencia_pagina": "pág. 44"
-  },
-  {
-    "id": "e4587a80-1a6f-4d6d-8c10-8b10fcd6a002",
-    "nome": "Técnica Letal",
-    "tipo": "Trilha",
-    "categoria": "Aniquilador",
-    "requisito": "NEX 10%",
-    "descricao": "A margem de ameaça da sua arma favorita aumenta em +2.",
-    "fonte": "OPRPG",
-    "referencia_pagina": "pág. 48"
+    "referencia_pagina": "(pág. 44)"
   },
   {
     "id": "e4587a80-1a6f-4d6d-8c10-8b10fcd6a003",
@@ -29,17 +30,16 @@
     "descricao": "Você recebe +2 pontos de vida por nível de personagem.",
     "afinidade": "Você recebe +2 pontos de vida por nível e RD Sangue 5.",
     "fonte": "OPRPG",
-    "referencia_pagina": "pág. 114"
+    "referencia_pagina": "(pág. 114)"
   },
   {
-    "id": "e4587a80-1a6f-4d6d-8c10-8b10fcd6a004",
-    "nome": "Acadêmico",
-    "tipo": "Origem",
-    "categoria": "Civil",
-    "pericias": "Ciências, Investigação",
-    "descricao": "Saber é Poder. Quando faz um teste de perícia usando Intelecto (exceto Luta e Pontaria), você pode gastar 2 PE para receber +5 nesse teste.",
-    "itens_iniciais": "Livro de anotações, caneta",
+    "id": "e4587a80-1a6f-4d6d-8c10-8b10fcd6a002",
+    "nome": "Técnica Letal",
+    "tipo": "Trilha",
+    "categoria": "Aniquilador",
+    "requisito": "NEX 10%",
+    "descricao": "A margem de ameaça da sua arma favorita aumenta em +2.",
     "fonte": "OPRPG",
-    "referencia_pagina": "pág. 24"
+    "referencia_pagina": "(pág. 48)"
   }
 ]
