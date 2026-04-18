@@ -1,0 +1,33 @@
+fonte: OPRPG
+itens:
+  - nome: Acadêmico
+    tipo: Origem
+    categoria: Civil
+    pericias: Ciências, Investigação
+    descricao: Saber é Poder. Quando faz um teste de perícia usando Intelecto
+      (exceto Luta e Pontaria), você pode gastar 2 PE para receber +5 nesse
+      teste.
+    itens_iniciais: Livro de anotações, caneta
+    referencia_pagina: 24
+  - nome: Ataque Especial
+    tipo: Classe
+    categoria: Combatente
+    requisito: NEX 5%
+    custo: 1 PE
+    descricao: Quando faz um ataque, você pode gastar 1 PE para receber +5 no teste
+      de ataque ou no dano. Conforme seu NEX aumenta, você pode gastar mais PE
+      para aumentar o bônus.
+    referencia_pagina: 44
+  - nome: Sangue de Ferro
+    tipo: Poder Paranormal
+    categoria: Sangue
+    requisito: Sangue 1
+    descricao: Você recebe +2 pontos de vida por nível de personagem.
+    afinidade: Você recebe +2 pontos de vida por nível e RD Sangue 5.
+    referencia_pagina: 114
+  - nome: Técnica Letal
+    tipo: Trilha
+    categoria: Aniquilador
+    requisito: NEX 10%
+    descricao: A margem de ameaça da sua arma favorita aumenta em +2.
+    referencia_pagina: 48

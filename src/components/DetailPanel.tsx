@@ -1,5 +1,5 @@
 import { Ritual, Habilidade, RitualVersao } from '../types/ritual';
-import { Sparkles, Brain } from 'lucide-react';
+import { Sparkles, Brain, Lock } from 'lucide-react';
 
 interface DetailPanelProps {
   item: Ritual | Habilidade;
@@ -28,13 +28,13 @@ export const DetailPanel = ({ item, onClose }: DetailPanelProps) => {
           <DetailField label="Alvo" value={item.alvo} />
           <DetailField label="Duração" value={item.duracao} />
           <DetailField label="Resistência" value={item.resistencia || 'Nenhuma'} />
-          <DetailField label="Fonte" value={`${item.fonte} ${item.referencia_pagina}`} />
+          <DetailField label="Fonte" value={`${item.fonte} (Pág. ${item.referencia_pagina})`} />
         </div>
       ) : (
         <div className="grid grid-cols-2 gap-4 text-[10px] uppercase tracking-widest font-bold opacity-60">
           <DetailField label="Pré-Requisito" value={item.requisito || 'N/A'} />
           <DetailField label="Custo" value={item.custo || 'N/A'} />
-          <DetailField label="Fonte" value={`${item.fonte} ${item.referencia_pagina}`} colSpan={2} />
+          <DetailField label="Fonte" value={`${item.fonte} (Pág. ${item.referencia_pagina})`} colSpan={2} />
           {item.pericias && <DetailField label="Perícias" value={item.pericias} colSpan={2} />}
           {item.itens_iniciais && <DetailField label="Itens Iniciais" value={item.itens_iniciais} colSpan={2} />}
         </div>
@@ -75,10 +75,15 @@ const DetailField = ({ label, value, colSpan = 1 }: { label: string; value: stri
 const RitualVersaoCard = ({ versao, index }: { versao: RitualVersao; index: number }) => (
   <div className="p-4 border border-app-border bg-white/5 space-y-3 relative">
     <div className="flex justify-between items-center">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-3">
         <span className="text-[10px] font-black uppercase px-2 py-0.5 bg-app-accent text-black">{versao.tipo}</span>
         {versao.requisito && (
-          <span className="text-[9px] uppercase font-bold text-app-accent/70">REQ: {versao.requisito}</span>
+          <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-sm bg-black/40 border border-white/5">
+            <Lock className="w-3 h-3 text-app-accent/70" />
+            <span className="text-[9px] uppercase font-bold text-white/60 tracking-wider">
+              {versao.requisito}
+            </span>
+          </div>
         )}
       </div>
       <span className="text-[10px] font-bold opacity-50">{versao.custo} PE</span>

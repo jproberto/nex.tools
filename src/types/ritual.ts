@@ -12,7 +12,7 @@ export interface RitualModificacoes {
 
 export interface RitualVersao {
   tipo: 'Base' | 'Discente' | 'Verdadeira';
-  custo: number;
+  custo: number; // Absolute final calculated cost
   requisito?: string;
   descricao: string;
   modificacoes?: RitualModificacoes;
@@ -28,9 +28,9 @@ export interface Ritual {
   alvo: string;
   duracao: string;
   resistencia: string | null;
-  referencia_pagina: string;
-  fonte: string;
-  descricao: string;
+  referencia_pagina: string | number;
+  fonte?: string;
+  grupo_fonte?: string; // Auto-injected at build time
   versoes: RitualVersao[];
 }
 
@@ -45,6 +45,7 @@ export interface Habilidade {
   afinidade?: string;
   pericias?: string;
   itens_iniciais?: string;
-  fonte: string;
-  referencia_pagina: string;
+  fonte?: string;
+  grupo_fonte?: string; // Auto-injected at build time
+  referencia_pagina: string | number;
 }

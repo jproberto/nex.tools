@@ -4,6 +4,7 @@
  */
 
 import { useState, useMemo, useEffect } from 'react';
+import { useSearchParams, useNavigate, useLocation } from 'react-router-dom';
 import { Book, Zap, Info, Newspaper, Monitor, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -33,17 +34,90 @@ type View = 'conteudo' | 'utilitarios' | 'modulos' | 'noticias' | 'sobre';
 type SubView = 'rituais' | 'habilidades';
 
 export default function NexTools() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const [activeView, setActiveView] = useState<View>('conteudo');
   const [activeSubView, setActiveSubView] = useState<SubView>('rituais');
   const [selectedItem, setSelectedItem] = useState<Ritual | Habilidade | null>(null);
+
+  // Sync state FROM URL on mount & location changes
+  useEffect(() => {
+    const path = location.pathname.split('/').filter(Boolean);
+    
+    if (path.length > 0) {
+      const view = path[0] as string;
+      if (['rituais', 'habilidades'].includes(view)) {
+        setActiveView('conteudo');
+        setActiveSubView(view as SubView);
+        
+        // Handle direct item selection (e.g. /rituais/alterar-destino)
+        if (path.length > 1) {
+          const itemId = path[1];
+          if (view === 'rituais') {
+            const found = RITUAIS.find(r => r.id === itemId);
+            if (found) setSelectedItem(found);
+          } else if (view === 'habilidades') {
+            const found = HABILIDADES.find(h => h.id === itemId);
+            if (found) setSelectedItem(found);
+          }
+        } else {
+          setSelectedItem(null); // Ensure modal closes if navigating back to root /rituais
+        }
+      } else if (['utilitarios', 'modulos', 'noticias', 'sobre'].includes(view)) {
+        setActiveView(view as View);
+        setSelectedItem(null);
+      }
+    }
+  }, [location.pathname]);
+
+  // View state handlers that push to URL instead of just local state
+  const handleViewChange = (view: View) => {
+    if (view === 'conteudo') {
+       navigate(`/${activeSubView}${location.search}`);
+    } else {
+       navigate(`/${view}`);
+    }
+  };
+
+  const handleSubViewChange = (subview: SubView) => {
+    navigate(`/${subview}${location.search}`);
+  };
+
+  const handleItemSelect = (item: Ritual | Habilidade | null) => {
+    if (item) {
+      navigate(`/${activeSubView}/${item.id}${location.search}`);
+    } else {
+      navigate(`/${activeSubView}${location.search}`);
+    }
+  };
+
   const [searchQuery, setSearchQuery] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   
-  const [selectedElements, setSelectedElements] = useState<Elemento[]>([]);
-  const [selectedCircles, setSelectedCircles] = useState<number[]>([]);
-  const [selectedSources, setSelectedSources] = useState<string[]>([]);
-  const [selectedAbilityTypes, setSelectedAbilityTypes] = useState<TipoHabilidade[]>([]);
+  // URL synced filters
+  const selectedElements = useMemo(() => searchParams.get('elementos')?.split(',') as Elemento[] || [], [searchParams]);
+  const selectedCircles = useMemo(() => searchParams.get('circulos')?.split(',').map(Number) || [], [searchParams]);
+  const selectedSources = useMemo(() => searchParams.get('fontes')?.split(',') || [], [searchParams]);
+  const selectedAbilityTypes = useMemo(() => searchParams.get('tipos')?.split(',') as TipoHabilidade[] || [], [searchParams]);
+
+  // Updating filters pushes to URL query params
+  const updateFilterParams = (key: string, values: string[]) => {
+    const newParams = new URLSearchParams(searchParams);
+    if (values.length > 0) {
+      newParams.set(key, values.join(','));
+    } else {
+      newParams.delete(key);
+    }
+    setSearchParams(newParams, { replace: true });
+  };
+
+  const setSelectedElements = (val: Elemento[]) => updateFilterParams('elementos', val);
+  const setSelectedCircles = (val: number[]) => updateFilterParams('circulos', val.map(String));
+  const setSelectedSources = (val: string[]) => updateFilterParams('fontes', val);
+  const setSelectedAbilityTypes = (val: TipoHabilidade[]) => updateFilterParams('tipos', val);
 
   useEffect(() => {
     const viewNames: Record<View, string> = {
@@ -92,8 +166,8 @@ export default function NexTools() {
   return (
     <div className="min-h-screen bg-app-bg text-app-text font-display selection:bg-app-accent selection:text-black flex flex-col h-screen overflow-hidden">
       <BackgroundGrid />
-      <Navbar navItems={navItems} activeView={activeView} setActiveView={setActiveView} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <MobileNav isOpen={isMenuOpen} navItems={navItems} activeView={activeView} setActiveView={setActiveView} setMenuOpen={setIsMenuOpen} />
+      <Navbar navItems={navItems} activeView={activeView} setActiveView={handleViewChange} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <MobileNav isOpen={isMenuOpen} navItems={navItems} activeView={activeView} setActiveView={handleViewChange} setMenuOpen={setIsMenuOpen} />
 
       <main className="flex-1 max-w-7xl mx-auto w-full p-4 md:p-8 overflow-hidden min-h-0 flex flex-col">
         <AnimatePresence mode="wait">
@@ -102,7 +176,7 @@ export default function NexTools() {
               key="conteudo" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
               className="flex-1 flex flex-col gap-6 overflow-hidden min-h-0"
             >
-              <SubNav activeSubView={activeSubView} setActiveSubView={(v) => { setActiveSubView(v); setSelectedItem(null); }} />
+              <SubNav activeSubView={activeSubView} setActiveSubView={handleSubViewChange} />
 
               <div className="flex-1 flex flex-col lg:flex-row gap-8 overflow-hidden min-h-0">
                 <div className="flex-1 flex flex-col gap-4 min-w-0 overflow-hidden">
@@ -113,7 +187,7 @@ export default function NexTools() {
                     setSelectedAbilityTypes={setSelectedAbilityTypes} selectedSources={selectedSources} setSelectedSources={setSelectedSources}
                     sources={SOURCES} toggleFilter={toggleFilter}
                   />
-                  <DataGrid data={filteredData} activeSubView={activeSubView} selectedItem={selectedItem} setSelectedItem={setSelectedItem} isRitual={(i): i is Ritual => 'circulo' in i} />
+                  <DataGrid data={filteredData} activeSubView={activeSubView} selectedItem={selectedItem} setSelectedItem={handleItemSelect} isRitual={(i): i is Ritual => 'circulo' in i} />
                 </div>
 
                 <AnimatePresence>
@@ -122,8 +196,8 @@ export default function NexTools() {
                       key="detail-panel" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }}
                       className="fixed inset-0 z-[60] lg:relative lg:inset-auto lg:z-0 w-full lg:w-[450px] border border-app-border bg-black lg:bg-app-surface backdrop-blur-sm overflow-auto custom-scrollbar"
                     >
-                      <button onClick={() => setSelectedItem(null)} className="lg:hidden absolute top-4 right-4 p-2 bg-app-accent text-black z-10"><X className="w-6 h-6" /></button>
-                      <DetailPanel item={selectedItem} onClose={() => setSelectedItem(null)} />
+                      <button onClick={() => handleItemSelect(null)} className="lg:hidden absolute top-4 right-4 p-2 bg-app-accent text-black z-10"><X className="w-6 h-6" /></button>
+                      <DetailPanel item={selectedItem} onClose={() => handleItemSelect(null)} />
                     </motion.div>
                   )}
                 </AnimatePresence>

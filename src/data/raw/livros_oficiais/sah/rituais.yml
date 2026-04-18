@@ -1,0 +1,460 @@
+fonte: SaH
+itens:
+  - nome: Apagar as Luzes
+    elemento:
+      - Morte
+    circulo: 1
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Instantânea
+    referencia_pagina: 50
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você traz a escuridão da Morte. Apaga qualquer fonte de luz em alcance
+          curto e recebe visão no escuro.
+
+
+          Apaga luzes ao redor e ganha visão no escuro.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Muda o alcance para longo.
+        modificacoes:
+          alcance: Longo
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo
+        descricao: Como discente e até 5 aliados recebem visão no escuro.
+        modificacoes:
+          alcance: Longo
+          alvo: Você e até 5 aliados
+        custo_extra: 5
+  - nome: Aurora da Verdade
+    elemento:
+      - Conhecimento
+    circulo: 2
+    execucao: Padrão
+    alcance: Curto
+    alvo: "Área: esfera 3m"
+    duracao: Sustentada
+    resistencia: Vontade parcial
+    referencia_pagina: 53
+    versoes:
+      - tipo: Base
+        descricao: >-
+          O Conhecimento não permite segredos. Revela a verdade na área e alvos
+          falham em testes de Enganação/mentiras.
+
+
+          Revela invisibilidade e impede mentiras.
+      - tipo: Discente
+        descricao: Alcance médio, esfera 9m e o conjurador não é afetado.
+        modificacoes:
+          alcance: Médio
+          alvo: "Área: esfera 9m"
+        custo_extra: 3
+      - tipo: Verdadeira
+        requisito: 4º Círculo e afinidade
+        descricao: Alcance longo e duração cena. Conjurador ouve tudo na área.
+        modificacoes:
+          alcance: Longo
+          duracao: Cena
+        custo_extra: 7
+  - nome: Desfazer Sinapses
+    elemento:
+      - Conhecimento
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: Vontade parcial
+    referencia_pagina: 53
+    versoes:
+      - tipo: Base
+        descricao: >-
+          A Entidade do Conhecimento devora trilhões de sinapses. Causa 2d6+2 de
+          dano de Conhecimento e deixa o alvo frustrado.
+
+
+          2d6+2 de dano e condição frustrado.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Alcance longo, dano 3d6+3 e afeta até 5 seres.
+        modificacoes:
+          alcance: Longo
+          alvo: Até 5 seres
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo
+        descricao: Alcance extremo, dano 8d6+8 e deixa alvos esmorecidos.
+        modificacoes:
+          alcance: Extremo
+        custo_extra: 5
+  - nome: Esfolar
+    elemento:
+      - Sangue
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: Reflexos parcial
+    referencia_pagina: 48
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você usa seu corpo como passagem para o Sangue, projetando agulhas e
+          lâminas rubras. Causa 3d4+3 pontos de dano de corte e deixa o alvo
+          sangrando. Se passar no teste, sofre metade do dano e evita a
+          condição.
+
+
+          3d4+3 de dano de corte e sangramento.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Alcance médio, dano 5d4+5 e alvo muda para explosão com 6m de raio.
+        modificacoes:
+          alcance: Médio
+          alvo: "Área: Explosão 6m"
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo
+        descricao: Alcance longo, dano 10d4+10 e alvo explosão 6m. Resistência não evita
+          a condição.
+        modificacoes:
+          alcance: Longo
+          alvo: "Área: Explosão 6m"
+        custo_extra: 5
+  - nome: Fedor Pútrido
+    elemento:
+      - Morte
+    circulo: 3
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Sustentada
+    referencia_pagina: 52
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Seu corpo assume o odor da decomposição. Recebe +5 em Furtividade e
+          +10 em Enganação (ficar parado). Sofre 1d4 de dano de Morte por
+          rodada.
+
+
+          Bônus em Furtividade/Enganação mas sofre dano.
+      - tipo: Discente
+        descricao: Alcance toque, alvo 1 ser voluntário.
+        modificacoes:
+          alcance: Toque
+          alvo: 1 ser voluntário
+        custo_extra: 4
+      - tipo: Verdadeira
+        requisito: Afinidade
+        descricao: Alcance curto, alvo até 5 seres voluntários.
+        modificacoes:
+          alcance: Curto
+          alvo: Até 5 seres voluntários
+        custo_extra: 9
+  - nome: Língua Morta
+    elemento:
+      - Morte
+    circulo: 2
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 cadáver
+    duracao: Sustentada
+    referencia_pagina: 51
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você faz o Lodo de Morte reanimar cordas vocais. Permite fazer até
+          três perguntas ao cadáver.
+
+
+          Até 3 perguntas para um cadáver.
+      - tipo: Discente
+        descricao: Limite de 4 perguntas. Cadáver vira um enraizado ao fim.
+        modificacoes:
+          duracao: Até 4 perguntas
+        custo_extra: 3
+      - tipo: Verdadeira
+        requisito: 4º Círculo e afinidade
+        descricao: Limite de 5 perguntas. Cadáver vira uma marionete ao fim.
+        modificacoes:
+          duracao: Até 5 perguntas
+        custo_extra: 7
+  - nome: Martírio de Sangue
+    elemento:
+      - Sangue
+    circulo: 4
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Veja texto
+    resistencia: null
+    referencia_pagina: 50
+    versoes:
+      - tipo: Base
+        descricao: >-
+          O sacrifício supremo. Recebe bônus massivos em combate, cura acelerada
+          e PV temporários, mas ao fim da cena você se torna permanentemente uma
+          criatura de Sangue.
+
+
+          Recebe +10 em ataque/dano, Defesa 30 e 30 PV temporários.
+      - tipo: Discente
+        requisito: Afinidade
+        descricao: Bônus aumenta para +20 e PV temporários para 50.
+        custo_extra: 5
+  - nome: Milagre Ionizante
+    elemento:
+      - Energia
+    circulo: 3
+    execucao: Completa
+    alcance: Toque
+    alvo: 1 ser
+    duracao: Instantânea
+    referencia_pagina: 56
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Usa o caos da Energia para restaurar a ordem biológica. Remove quase
+          qualquer condição negativa do alvo.
+
+
+          Remove uma condição negativa.
+      - tipo: Discente
+        descricao: Remove a condição sem necessidade de teste de Fortitude.
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: Remove todas as condições do alvo simultaneamente.
+        custo_extra: 5
+  - nome: Mutar
+    elemento:
+      - Energia
+    circulo: 3
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Cena
+    referencia_pagina: 56
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Distorce as ondas sonoras e de luz ao seu redor para inibir sua
+          presença. Recebe +10 em Furtividade.
+
+
+          Fornece +10 em Furtividade.
+      - tipo: Discente
+        descricao: Alcance toque, alvo 1 ser.
+        modificacoes:
+          alcance: Toque
+          alvo: 1 ser
+        custo_extra: 4
+      - tipo: Verdadeira
+        requisito: Afinidade
+        descricao: Alcance curto, alvo até 5 seres.
+        modificacoes:
+          alcance: Curto
+          alvo: Até 5 seres
+        custo_extra: 9
+  - nome: Odor da Caçada
+    elemento:
+      - Sangue
+    circulo: 3
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 49
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Suas pupilas dilatam e seu faro se intensifica. Recebe faro, +5 em
+          Atletismo em perseguições e não perde PV por esforço extra. Na cena
+          seguinte, sofre efeitos de fome e sede.
+
+
+          Faro, bônus em Atletismo e esforço sem dano.
+      - tipo: Discente
+        descricao: Muda o alcance para toque e o alvo para 1 ser.
+        modificacoes:
+          alcance: Toque
+          alvo: 1 ser
+        custo_extra: 4
+      - tipo: Verdadeira
+        requisito: Afinidade
+        descricao: Muda o alcance para curto e o alvo para até 5 seres.
+        modificacoes:
+          alcance: Curto
+          alvo: Até 5 seres
+        custo_extra: 9
+  - nome: Overclock
+    elemento:
+      - Energia
+    circulo: 1
+    execucao: Reação
+    alcance: Pessoal
+    alvo: Você
+    duracao: Instantânea
+    referencia_pagina: 55
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Força um item tecnológico a superar limites. Se falhar no teste de
+          Tecnologia contra o item, ele se torna imprevisível.
+
+
+          Desafia um item tecnológico para agir de forma específica.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Só falha se errar o teste duas vezes.
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo
+        descricao: Só falha se errar o teste três vezes.
+        custo_extra: 5
+  - nome: Pronunciar Sigilo
+    elemento:
+      - Conhecimento
+    circulo: 4
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: Vontade parcial
+    referencia_pagina: 54
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você profana a realidade com Sigilos do Outro Lado. Escolha um efeito
+          terrível: Esquecer, Cegar ou Inexistir.
+
+
+          Escolha entre Esquecer (atordoado), Cegar ou Inexistir (desaparecer
+          brevemente).
+      - tipo: Discente
+        descricao: Alcance extremo.
+        modificacoes:
+          alcance: Extremo
+        custo_extra: 5
+      - tipo: Verdadeira
+        descricao: Alvo para até 5 seres.
+        modificacoes:
+          alvo: Até 5 seres
+        custo_extra: 10
+  - nome: Relembrar Fragmento
+    elemento:
+      - Conhecimento
+    circulo: 3
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 objeto
+    duracao: Instantânea
+    referencia_pagina: 54
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você restaura o texto de um objeto ilegível ou danificado
+          permanentemente.
+
+
+          Restaura memórias e textos de objetos.
+      - tipo: Discente
+        descricao: Objeto restaurado até o fim da missão.
+        custo_extra: 4
+      - tipo: Verdadeira
+        requisito: Afinidade
+        descricao: Altera ou apaga o conteúdo original permanentemente.
+        custo_extra: 9
+  - nome: Sede de Adrenalina
+    elemento:
+      - Sangue
+    circulo: 2
+    execucao: Reação
+    alcance: Pessoal
+    alvo: Você
+    duracao: Instantânea
+    resistencia: null
+    referencia_pagina: 49
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você troca a racionalidade por um físico sobrenatural. Ao falhar em
+          Acrobatismo ou Atletismo, pode repetir o teste usando Presença. Ou, ao
+          sofrer dano de impacto, reduz esse dano em 20.
+
+
+          Repete teste físico com Presença ou reduz 20 de dano de impacto.
+      - tipo: Discente
+        descricao: Redução de dano de impacto aumenta para 40.
+        custo_extra: 3
+      - tipo: Verdadeira
+        requisito: 4º Círculo e afinidade
+        descricao: Redução de dano de impacto aumenta para 70.
+        custo_extra: 7
+  - nome: Singularidade Temporal
+    elemento:
+      - Morte
+    circulo: 4
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 objeto não paranormal Médio
+    duracao: Instantânea
+    resistencia: Fortitude parcial
+    referencia_pagina: 52
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Distorce o tempo em um objeto para apodrecê-lo ou restaurá-lo
+          instantaneamente.
+
+
+          Afeta um objeto de tamanho Médio.
+      - tipo: Discente
+        descricao: Tamanho Grande.
+        modificacoes:
+          alvo: 1 objeto Grande
+        custo_extra: 5
+      - tipo: Verdadeira
+        descricao: Tamanho Enorme.
+        modificacoes:
+          alvo: 1 objeto Enorme
+        custo_extra: 10
+  - nome: Tremeluzir
+    elemento:
+      - Energia
+    circulo: 2
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Sustentada
+    referencia_pagina: 55
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Sua matéria oscila em fótons. Permite atravessar objetos sólidos e
+          fornece RD. Sofre 1d4 de dano de Energia por rodada.
+
+
+          Atravessa sólidos com chance de falha. Ganha RD contra ataques
+          físicos.
+      - tipo: Discente
+        descricao: Alcance toque e alvo ser voluntário.
+        modificacoes:
+          alcance: Toque
+          alvo: 1 ser voluntário
+        custo_extra: 3
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: Alcance curto e alvo até 5 seres voluntários.
+        modificacoes:
+          alcance: Curto
+          alvo: Até 5 seres voluntários
+        custo_extra: 7

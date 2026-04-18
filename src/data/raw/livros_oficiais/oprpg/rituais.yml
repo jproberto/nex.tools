@@ -1,0 +1,1309 @@
+fonte: OPRPG
+itens:
+  - nome: Alterar Destino
+    elemento:
+      - Energia
+    circulo: 4
+    execucao: Reação
+    alcance: Pessoal
+    alvo: Você
+    duracao: Instantânea
+    resistencia: null
+    referencia_pagina: 124
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você analisa milhões de futuros possíveis em um instante e escolhe o
+          caminho que leva ao sucesso. Recebe +15 em um teste de resistência ou
+          na Defesa contra o próximo ataque que sofrer.
+
+
+          Bônus de +15 em resistência ou Defesa.
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: O alcance muda para curto e o alvo para um aliado à sua escolha.
+        modificacoes:
+          alcance: Curto
+          alvo: 1 aliado
+        custo_extra: 5
+  - nome: Alterar Memória
+    elemento:
+      - Conhecimento
+    circulo: 3
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 pessoa
+    duracao: Instantânea
+    resistencia: Vontade anula
+    referencia_pagina: 124
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você manipula a mente do alvo para apagar ou alterar memórias de até
+          uma hora atrás. Memórias apagadas são recuperadas após 1d4 dias.
+
+
+          Altera memórias de até 1h atrás.
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: Você pode alterar ou apagar memórias de até 24 horas atrás.
+        custo_extra: 4
+  - nome: Amaldiçoar Arma
+    elemento:
+      - Sangue
+      - Morte
+      - Conhecimento
+      - Energia
+    circulo: 1
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 arma corpo a corpo ou pacote de munição
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 124
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você infunde uma arma com um elemento (Conhecimento, Energia, Morte ou
+          Sangue). A arma passa a causar +1d6 de dano do elemento escolhido.
+
+
+          Arma causa +1d6 de dano elemental.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: O bônus de dano aumenta para +2d6.
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo e afinidade
+        descricao: O bônus de dano aumenta para +4d6.
+        custo_extra: 5
+  - nome: Amaldiçoar Tecnologia
+    elemento:
+      - Energia
+    circulo: 1
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 acessório ou arma de fogo
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 124
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você sobrecarrega um item tecnológico com energia paranormal,
+          fazendo-o operar além dos limites. O item recebe uma modificação à sua
+          escolha.
+
+
+          O item recebe uma modificação.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: O item recebe duas modificações simultâneas.
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo e afinidade
+        descricao: O item recebe três modificações simultâneas.
+        custo_extra: 5
+  - nome: Âncora Temporal
+    elemento:
+      - Morte
+    circulo: 3
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Cena
+    resistencia: Vontade parcial
+    referencia_pagina: 124
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Uma espiral de lodo surge sob o alvo, prendendo-o no tempo. No início
+          de cada turno, o alvo deve resistir ou não poderá se deslocar. Dois
+          sucessos seguidos encerram o ritual.
+
+
+          Alvo deve fazer testes de Vontade para conseguir se mover.
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: O alvo muda para 'seres à sua escolha' no alcance.
+        modificacoes:
+          alvo: Seres à escolha
+        custo_extra: 4
+  - nome: Aprimorar Físico
+    elemento:
+      - Sangue
+    circulo: 2
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 ser
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 125
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Os músculos e ligamentos do alvo são reforçados pelo Sangue. O alvo
+          recebe +1 em Agilidade ou Força (à escolha dele).
+
+
+          Recebe +1 em Agilidade ou Força.
+      - tipo: Discente
+        requisito: 3º Círculo
+        descricao: O bônus aumenta para +2.
+        custo_extra: 3
+      - tipo: Verdadeira
+        requisito: 4º Círculo e afinidade
+        descricao: O bônus aumenta para +3.
+        custo_extra: 7
+  - nome: Arma Atroz
+    elemento:
+      - Sangue
+    circulo: 1
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 arma corpo a corpo
+    duracao: Sustentada
+    resistencia: null
+    referencia_pagina: 125
+    versoes:
+      - tipo: Base
+        descricao: >-
+          A arma é recoberta por uma aura carmesim de violência pura. Fornece +2
+          em testes de ataque e +1 na margem de ameaça.
+
+
+          Fornece +2 em ataque e +1 na margem de ameaça.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: O bônus em testes de ataque aumenta para +5.
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo e afinidade
+        descricao: Bônus de +5 em ataque, +2 na margem e +1 no multiplicador de crítico.
+        custo_extra: 5
+  - nome: Armadura de Sangue
+    elemento:
+      - Sangue
+    circulo: 1
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 125
+    versoes:
+      - tipo: Base
+        descricao: Seu sangue escorre e endurece sobre sua pele, criando uma carapaça
+          protetora. Fornece +5 na Defesa.
+      - tipo: Discente
+        requisito: 3º Círculo
+        descricao: Fornece +10 na Defesa e RD 5 contra danos físicos (balístico, corte,
+          impacto e perfuração).
+        custo_extra: 5
+      - tipo: Verdadeira
+        requisito: 4º Círculo e afinidade
+        descricao: Fornece +15 na Defesa e RD 10 contra danos físicos.
+        custo_extra: 9
+  - nome: Cicatrização
+    elemento:
+      - Morte
+    circulo: 1
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: null
+    referencia_pagina: 126
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você acelera o tempo ao redor das feridas do alvo, fechando-as
+          instantaneamente. O alvo recupera 3d8+3 PV, mas envelhece 1 ano pelo
+          esforço.
+
+
+          Recupera 3d8+3 PV.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: A cura aumenta para 5d8+5 PV.
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 4º Círculo e afinidade
+        descricao: Alcance Curto, Alvo 'seres selecionados'. Cura 7d8+7 PV.
+        modificacoes:
+          alcance: Curto
+          alvo: Seres selecionados
+        custo_extra: 9
+  - nome: Coincidência Forçada
+    elemento:
+      - Energia
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 126
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você manipula o caos para que as probabilidades favoreçam o alvo. Ele
+          recebe +2 em todos os seus testes de perícia.
+
+
+          Recebe +2 em testes de perícia.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: O alvo muda para 'aliados à sua escolha' no alcance.
+        modificacoes:
+          alvo: Aliados à escolha
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo e afinidade
+        descricao: O bônus aumenta para +5 em testes de perícia.
+        custo_extra: 5
+  - nome: Consumir Manancial
+    elemento:
+      - Morte
+    circulo: 1
+    execucao: Padrão
+    alcance: Toque
+    alvo: Você
+    duracao: Instantânea
+    resistencia: null
+    referencia_pagina: 127
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você drena a vitalidade de pequenas formas de vida ao redor para se
+          fortalecer. Recebe 3d6 PV temporários que duram até o fim da cena.
+
+
+          Recebe 3d6 PV temporários.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Recebe 6d6 PV temporários.
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo e afinidade
+        descricao: Área de esfera de 6m. Drena 3d6 de dano de Morte de todos na área e
+          converte em PV temporários para você.
+        modificacoes:
+          alvo: "Área: Esfera 6m"
+          resistencia: Fortitude reduz à metade
+        custo_extra: 5
+  - nome: Contenção Fantasmagórica
+    elemento:
+      - Energia
+    circulo: 2
+    execucao: Padrão
+    alcance: Médio
+    alvo: 1 ser
+    duracao: Cena
+    resistencia: Reflexos anula
+    referencia_pagina: 127
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Laços de pura energia surgem do chão e se enroscam no alvo, deixando-o
+          agarrado. Se o alvo passar no teste de resistência, ele destrói um
+          laço, mas o ritual pode criar laços adicionais conforme a potência.
+
+
+          Cria laços de energia que agarram o alvo. Os laços podem ser atacados
+          (Defesa 10, 10 PV).
+      - tipo: Discente
+        requisito: 3º Círculo
+        descricao: Cria até 6 laços, e você pode escolher alvos diferentes para cada um
+          (máximo 2 por alvo).
+        custo_extra: 3
+  - nome: Corpo Adaptado
+    elemento:
+      - Sangue
+    circulo: 1
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 pessoa ou animal
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 128
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você altera a biologia do alvo para sobreviver em condições hostis.
+          Ele se torna imune a frio e calor extremos, pode respirar na água ou
+          em fumaça densa.
+
+
+          Imunidade ambiental por uma cena.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: A duração aumenta para 1 dia.
+        modificacoes:
+          duracao: 1 dia
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo
+        descricao: Alcance Curto, alvo 'pessoas selecionadas'.
+        modificacoes:
+          alcance: Curto
+          alvo: Pessoas selecionadas
+        custo_extra: 5
+  - nome: Decadência
+    elemento:
+      - Morte
+    circulo: 1
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: Fortitude reduz à metade
+    referencia_pagina: 129
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Espirais de trevas envolvem sua mão. Ao tocar o alvo, você causa 2d8+2
+          pontos de dano de Morte.
+
+
+          Causa 2d8+2 de dano de Morte.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Muda a resistência para 'Nenhuma'. Se acertar um ataque corpo a
+          corpo, pode conjurar este ritual como parte da execução.
+        modificacoes:
+          resistencia: Nenhuma
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo
+        descricao: Alcance Pessoal, área de explosão de 6m. Causa 8d8+8 de dano de Morte.
+        modificacoes:
+          alcance: Pessoal
+          alvo: "Área: Explosão 6m"
+        custo_extra: 5
+  - nome: Definhar
+    elemento:
+      - Morte
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Cena
+    resistencia: Fortitude parcial
+    referencia_pagina: 129
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você libera uma lufada de cinzas que drena a vitalidade do alvo. Ele
+          fica fatigado por uma cena (ou uma rodada em caso de sucesso no
+          teste).
+
+
+          Alvo fica fatigado.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Alvo fica exausto.
+        custo_extra: 2
+      - tipo: Verdadeira
+        requisito: 3º Círculo e afinidade
+        descricao: Afeta até 5 alvos à sua escolha.
+        modificacoes:
+          alvo: Até 5 seres
+        custo_extra: 5
+  - nome: Desacelerar Impacto
+    elemento:
+      - Morte
+    circulo: 2
+    execucao: Reação
+    alcance: Curto
+    alvo: 1 ser ou objeto
+    duracao: Queda ou 1 cena
+    resistencia: null
+    referencia_pagina: 129
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você manipula a percepção temporal do movimento, fazendo algo cair ou
+          se mover lentamente. Ideal para evitar danos de queda ou parar
+          projéteis em pleno ar.
+
+
+          Reduz velocidade de queda ou para um projétil médio.
+      - tipo: Verdadeira
+        requisito: 4º Círculo e afinidade
+        descricao: Afeta até 100 objetos ou seres em uma área ampla.
+        modificacoes:
+          alvo: Até 100 seres/objetos
+        custo_extra: 3
+  - nome: Descarnar
+    elemento:
+      - Sangue
+    circulo: 2
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: Fortitude parcial
+    referencia_pagina: 129
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Dilacerações cruéis se manifestam na pele do alvo. Causa 6d8 pontos de
+          dano de Sangue e deixa o alvo com hemorragia.
+
+
+          Causa 6d8 de dano de Sangue e hemorragia.
+      - tipo: Discente
+        requisito: 3º Círculo
+        descricao: Dano aumenta para 10d8 e a hemorragia para 4d8. Ignora certas
+          resistências físicas.
+        modificacoes:
+          resistencia: Fortitude reduz à metade
+        custo_extra: 3
+  - nome: Dissonância Acústica
+    elemento:
+      - Energia
+    circulo: 2
+    execucao: Padrão
+    alcance: Médio
+    alvo: "Área: esfera de 6m"
+    duracao: Sustentada
+    resistencia: null
+    referencia_pagina: 130
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você cria uma área de silêncio absoluto ou de ruído ensurdecedor.
+          Impede a comunicação sonora e pode impedir a conjuração de rituais que
+          dependam de som.
+
+
+          Cria uma zona de dissonância sonora.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Você pode gastar uma reação para fazer rituais dentro da área falharem.
+        modificacoes:
+          execucao: Padrão + Reação
+        custo_extra: 1
+      - tipo: Verdadeira
+        requisito: 3º Círculo
+        descricao: Duração muda para 'Cena'. No fim do turno, todos na área sofrem dano
+          sônico.
+        modificacoes:
+          duracao: Cena
+        custo_extra: 3
+  - nome: Distorção Temporal
+    elemento:
+      - Morte
+    circulo: 4
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: 3 rodadas
+    resistencia: null
+    referencia_pagina: 130
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você cria um bolsão temporal onde o tempo corre de forma diferente.
+          Isso permite que você realize ações adicionais enquanto o resto do
+          mundo parece congelado.
+
+
+          Você recebe rodadas extras durante o efeito (geralmente 3 rodadas).
+  - nome: Eco Espiral
+    elemento:
+      - Morte
+    circulo: 2
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: 2 rodadas
+    resistencia: Fortitude reduz à metade
+    referencia_pagina: 131
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você manifesta uma cópia densa de cinzas do alvo. Na rodada seguinte,
+          a cópia explode, causando dano de Morte igual ao dano que o alvo
+          sofreu durante o tempo em que a cópia existiu.
+
+
+          Dano de Morte acumulado explode na rodada seguinte.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Aumenta o limite de dano que pode ser acumulado e a resistência muda
+          para 'Fortitude reduz a 1/4'.
+        custo_extra: 0
+  - nome: Eletrocussão
+    elemento:
+      - Energia
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser ou objeto
+    duracao: Instantânea
+    resistencia: Fortitude parcial
+    referencia_pagina: 131
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você dispara uma corrente elétrica que causa 3d6 pontos de dano de
+          Energia e deixa o alvo vulnerável por uma rodada.
+
+
+          Causa 3d6 de dano de Energia e vulnerabilidade.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Muda o alcance para 'Linha de 30m' e o dano para 6d6.
+        modificacoes:
+          alcance: "Linha: 30m"
+        custo_extra: 2
+  - nome: Embalar
+    elemento:
+      - Energia
+    circulo: 1
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 131
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você cria três duplicatas ilusórias de si mesmo que confundem os
+          atacantes. Cada ataque contra você tem chance de atingir uma duplicata
+          em vez de você.
+
+
+          Cria 3 duplicatas ilusórias.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Cria 5 duplicatas e fornece bônus na Defesa.
+        modificacoes:
+          alvo: Cria 5 duplicatas
+        custo_extra: 2
+  - nome: Enfeitiçar
+    elemento:
+      - Conhecimento
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 pessoa
+    duracao: Cena
+    resistencia: Vontade anula
+    referencia_pagina: 131
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Este ritual torna o alvo mais prestativo e aberto às suas sugestões.
+          Você recebe +10 em testes de Diplomacia contra o alvo.
+
+
+          Fornece +10 em Diplomacia com o alvo.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: O alvo obedece a uma sugestão razoável por vez.
+        custo_extra: 2
+  - nome: Esconder dos Olhos
+    elemento:
+      - Conhecimento
+    circulo: 2
+    execucao: Livre
+    alcance: Pessoal
+    alvo: Você
+    duracao: 1 rodada
+    resistencia: null
+    referencia_pagina: 132
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você fica invisível, incluindo seu equipamento. Se realizar um ataque
+          ou usar uma habilidade hostil, o efeito termina imediatamente.
+
+
+          Fica invisível por 1 rodada.
+      - tipo: Discente
+        requisito: 3º Círculo
+        descricao: A duração aumenta para 'Cena' e o ritual não é dissipado por ações
+          hostis.
+        modificacoes:
+          duracao: Cena
+        custo_extra: 3
+  - nome: Espirais da Perdição
+    elemento:
+      - Morte
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 132
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Espirais surgem no corpo do alvo, tornando seus movimentos lentos e
+          desajustados. O alvo sofre uma penalidade de -20 em testes de ataque.
+
+
+          Alvo recebe penalidade de -20 em ataques.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Aumenta a duração e a penalidade afeta também testes de perícia
+          baseados em destreza.
+        custo_extra: 2
+  - nome: Fim Inevitável
+    elemento:
+      - Morte
+    circulo: 4
+    execucao: Completa
+    alcance: Extremo
+    alvo: "Efeito: buraco negro de 1.5m"
+    duracao: 4 rodadas
+    resistencia: Fortitude parcial
+    referencia_pagina: 132
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você cria um vácuo temporal em um espaço livre à sua escolha. Seres
+          próximos são puxados em direção ao centro e sofrem 100 pontos de dano
+          de Morte por rodada.
+
+
+          Causa 100 de dano de Morte e puxa seres na direção do vácuo.
+  - nome: Flagelo de Sangue
+    elemento:
+      - Sangue
+    circulo: 2
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 pessoa
+    duracao: Cena
+    resistencia: Fortitude parcial
+    referencia_pagina: 133
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você toca uma pessoa ou profere uma ordem impossível de ignorar. Uma
+          marca surge no alvo, causando dor excruciante e dano de Sangue a cada
+          rodada.
+
+
+          Causa dor e dano de Sangue persistente.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Se o alvo for uma criatura de Sangue, o efeito é ignorado, mas causa
+          mais dano a outros tipos de seres.
+        custo_extra: 1
+  - nome: Forma Monstruosa
+    elemento:
+      - Sangue
+    circulo: 3
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 133
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Seu corpo se transforma, mesclando suas características com as de uma
+          criatura de Sangue. Suas roupas e proteções se fundem à sua carne,
+          criando uma couraça e garras poderosas.
+
+
+          Você se torna Grande, recebe bônus em testes de ataque e dano físico,
+          e ganha RD.
+  - nome: Fortalecimento Sensorial
+    elemento:
+      - Sangue
+    circulo: 1
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 133
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você potencializa seus sentidos, tornando sua percepção do mundo ao
+          redor hiper-aguçada. Recebe +10 em testes de Investigação, Luta,
+          Percepção e Pontaria.
+
+
+          Fornece +10 em Investigação, Luta, Percepção e Pontaria.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Fornece penalidade de -20 para inimigos que tentarem te atacar
+          furtivamente.
+        custo_extra: 2
+  - nome: Hemofagia
+    elemento:
+      - Sangue
+    circulo: 2
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: Fortitude reduz à metade
+    referencia_pagina: 133
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você arranca o sangue do corpo do alvo através da pele, causando 6d6
+          pontos de dano de Sangue. Você absorve esse sangue, recuperando PV
+          iguais à metade do dano causado.
+
+
+          Causa 6d6 de dano de Sangue e recupera PV.
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: Alcance Curto, Alvo 'seres selecionados'. Recupera PV igual ao total
+          de dano causado.
+        modificacoes:
+          alcance: Curto
+          alvo: Seres selecionados
+        custo_extra: 7
+  - nome: Inexistir
+    elemento:
+      - Conhecimento
+    circulo: 4
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: Vontade parcial
+    referencia_pagina: 134
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Um ritual cruel que apaga o alvo da existência. Causa 10d12+10 pontos
+          de dano de Conhecimento. Se o PV do alvo chegar a 0, ele é apagado da
+          realidade, não restando nenhum vestígio.
+
+
+          Causa 10d12+10 de dano de Conhecimento.
+      - tipo: Discente
+        requisito: 15d12+15 dano
+        descricao: Dano aumenta para 15d12+15.
+        custo_extra: 3
+  - nome: Invadir Mente
+    elemento:
+      - Conhecimento
+    circulo: 2
+    execucao: Padrão
+    alcance: Médio
+    alvo: 1 ou 2 pessoas
+    duracao: Instantânea ou 1 dia
+    resistencia: Vontade parcial
+    referencia_pagina: 134
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você projeta sua consciência na mente do alvo. Pode causar 6d6 de dano
+          mental (Rajada Mental) ou estabelecer uma Ligação Telepática.
+
+
+          Causa 6d6 de dano ou cria ligação telepática.
+      - tipo: Discente
+        requisito: 3º Círculo
+        descricao: Dano aumenta para 10d6 ou permite ver/ouvir pelos sentidos do alvo.
+        custo_extra: 3
+  - nome: Invólucro de Carne
+    elemento:
+      - Sangue
+    circulo: 4
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 clone seu
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 134
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Uma cópia sua emerge de uma poça de sangue. Ela tem suas estatísticas
+          e pode agir independentemente. Se você for destruído, sua consciência
+          pode migrar para o clone.
+
+
+          Cria uma cópia idêntica que age por uma cena.
+  - nome: Lâmina do Medo
+    elemento:
+      - Medo
+    circulo: 4
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: Fortitude parcial
+    referencia_pagina: 135
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você manifesta uma lâmina impossível que corta a realidade. Alvos
+          atingidos caem a 0 PV e ficam morrendo. Se passarem, sofrem 10d8 de
+          dano de Medo.
+
+
+          Corta o alvo, ignorando resistências se falhar no teste.
+  - nome: Localização
+    elemento:
+      - Conhecimento
+    circulo: 2
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: Você
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 135
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você entra em sintonia com o Conhecimento para localizar uma pessoa ou
+          objeto específico em um raio de 90m.
+
+
+          Localiza alvo em raio de 90m.
+      - tipo: Discente
+        requisito: 3º Círculo
+        descricao: Aumenta o raio ou permite localizar por um período maior.
+        custo_extra: 3
+  - nome: Luz
+    elemento:
+      - Energia
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 objeto
+    duracao: Cena
+    resistencia: Vontade anula
+    referencia_pagina: 135
+    versoes:
+      - tipo: Base
+        descricao: |-
+          O objeto emite luz de cores alternadas em uma área de 9m de raio.
+
+          Ilumina área de 9m.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Cria esferas brilhantes que podem ser movidas e ofuscam inimigos.
+        custo_extra: 2
+  - nome: Mergulho Mental
+    elemento:
+      - Conhecimento
+    circulo: 3
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 pessoa
+    duracao: Sustentada
+    resistencia: Vontade parcial
+    referencia_pagina: 136
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você mergulha nos pensamentos do alvo para extrair informações. O alvo
+          não pode mentir para você.
+
+
+          Lê pensamentos superficiais e impede mentiras.
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: Duração aumenta para 1 dia e permite vasculhar memórias profundas.
+        custo_extra: 4
+  - nome: Miasma Entrópico
+    elemento:
+      - Morte
+    circulo: 2
+    execucao: Padrão
+    alcance: Médio
+    alvo: "Área: nuvem com 6m de raio"
+    duracao: Instantânea
+    resistencia: Fortitude parcial
+    referencia_pagina: 136
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Uma explosão de emanações tóxicas. Causa 4d8 de dano químico e deixa
+          alvos enjoados.
+
+
+          Causa 4d8 de dano e enjoo.
+      - tipo: Discente
+        descricao: Dano aumenta para 6d8.
+        custo_extra: 3
+  - nome: Nuvem de Cinzas
+    elemento:
+      - Morte
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: "Área: nuvem com 6m de raio"
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 136
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Uma nuvem de fuligem espessa se eleva, obscurecendo a visão. Fornece
+          camuflagem para quem está dentro.
+
+
+          Obscurece visão na área.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Aliados enxergam através da nuvem.
+        custo_extra: 2
+  - nome: Ódio Incontrolável
+    elemento:
+      - Sangue
+    circulo: 1
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 pessoa
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 136
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Alvo entra em um frenesi assassino. Recebe +2 em testes de ataque e
+          dano corpo a corpo, mas não pode realizar ações que exijam calma.
+
+
+          Fornece +2 em ataque/dano e fúria.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Alvo pode fazer um ataque adicional por rodada.
+        custo_extra: 2
+  - nome: Ouvir os Sussurros
+    elemento:
+      - Conhecimento
+    circulo: 1
+    execucao: Completa
+    alcance: Pessoal
+    alvo: Você
+    duracao: Instantânea
+    resistencia: null
+    referencia_pagina: 137
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você se conecta com memórias do Outro Lado para obter respostas sobre
+          um evento futuro ou oculto.
+
+
+          Obtém uma resposta 'sim' ou 'não' do mestre.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Duração aumenta para 1 minuto e permite fazer mais perguntas.
+        custo_extra: 2
+  - nome: Paradoxo
+    elemento:
+      - Morte
+    circulo: 2
+    execucao: Padrão
+    alcance: Médio
+    alvo: "Área: esfera com 6m de raio"
+    duracao: Instantânea
+    resistencia: Fortitude reduz à metade
+    referencia_pagina: 137
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Cria uma implosão de distorção temporal. Causa 6d6 de dano de Morte na
+          área.
+
+
+          Causa 6d6 de dano de Morte.
+      - tipo: Discente
+        descricao: Muda a área para um cilindro e causa 13d6 de dano.
+        custo_extra: 3
+  - nome: Perturbação
+    elemento:
+      - Conhecimento
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 pessoa
+    duracao: 1 rodada
+    resistencia: Vontade anula
+    referencia_pagina: 137
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Dá uma ordem direta que o alvo deve obedecer (Fuja, Largue, Pare ou
+          Sente-se).
+
+
+          Alvo obedece a um comando de uma palavra.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Alvo executa um comando mais complexo como 'Siga-me' ou 'Ataque'.
+        custo_extra: 2
+  - nome: Polarização Caótica
+    elemento:
+      - Energia
+    circulo: 1
+    execucao: Padrão
+    alcance: Curto
+    alvo: Você
+    duracao: Sustentada
+    resistencia: Vontade anula
+    referencia_pagina: 138
+    versoes:
+      - tipo: Base
+        descricao: |-
+          Cria uma aura magnética que pode atrair ou repelir objetos metálicos.
+
+          Atrai ou repele objetos de metal de tamanho Médio ou menor.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Permite arremessar múltiplos objetos metálicos contra inimigos.
+        custo_extra: 2
+  - nome: Possessão
+    elemento:
+      - Conhecimento
+    circulo: 4
+    execucao: Padrão
+    alcance: Longo
+    alvo: 1 pessoa viva ou morta
+    duracao: 1 dia
+    resistencia: Vontade anula
+    referencia_pagina: 138
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Projeta sua consciência no corpo de outra pessoa, assumindo controle
+          total enquanto seu próprio corpo fica inerte.
+
+
+          Assume controle do corpo do alvo por um dia.
+  - nome: Presença do Medo
+    elemento:
+      - Medo
+    circulo: 4
+    execucao: Padrão
+    alcance: Pessoal
+    alvo: "Emanação: 9m de raio"
+    duracao: Sustentada
+    resistencia: Vontade anula
+    referencia_pagina: 139
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você se torna um receptáculo para o Medo puro, emanando ondas de
+          pavor. Inimigos na área ficam abalados ou até paralisados de terror.
+
+
+          Causa dano mental e medo persistente na área.
+  - nome: Purgatório
+    elemento:
+      - Sangue
+    circulo: 3
+    execucao: Padrão
+    alcance: Curto
+    alvo: "Área: 6m de raio"
+    duracao: Sustentada
+    resistencia: Fortitude parcial
+    referencia_pagina: 139
+    versoes:
+      - tipo: Base
+        descricao: >-
+          O chão brota sangue pegajoso que dificulta o movimento e causa dor.
+          Inimigos na área ficam vulneráveis e sofrem 6d6 de dano de Sangue.
+
+
+          Dificulta movimento e causa 6d6 de dano.
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: Dano aumenta para 10d6 e fornece bônus massivo em testes de
+          resistência.
+        custo_extra: 6
+  - nome: Salto Fantasma
+    elemento:
+      - Energia
+    circulo: 3
+    execucao: Padrão
+    alcance: Médio
+    alvo: Você
+    duracao: Instantânea
+    resistencia: null
+    referencia_pagina: 139
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você se transforma em energia pura e viaja instantaneamente para outro
+          ponto visível ou conhecido.
+
+
+          Teleporte para um lugar visível ou conhecido em alcance médio.
+      - tipo: Discente
+        requisito: Reação
+        descricao: Pode ser usado como reação para desviar de ataques.
+        custo_extra: 2
+  - nome: Tecer Ilusão
+    elemento:
+      - Conhecimento
+    circulo: 1
+    execucao: Padrão
+    alcance: Médio
+    alvo: "Efeito: ilusão visual/sonora"
+    duracao: Cena
+    resistencia: Vontade desacredita
+    referencia_pagina: 140
+    versoes:
+      - tipo: Base
+        descricao: |-
+          Cria uma imagem ou som ilusório persistente.
+
+          Ilusão visual ou sonora simples.
+      - tipo: Discente
+        requisito: 2º Círculo
+        descricao: Ilusão complexa com movimento e sons combinados.
+        custo_extra: 2
+  - nome: Teletransporte
+    elemento:
+      - Energia
+    circulo: 4
+    execucao: Padrão
+    alcance: Toque
+    alvo: Até 5 seres voluntários
+    duracao: Instantânea
+    resistencia: null
+    referencia_pagina: 141
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Transporta seres e equipamentos para qualquer lugar do mundo
+          conhecido.
+
+
+          Teleporte para qualquer lugar, com margem de erro dependendo do
+          conhecimento do destino.
+  - nome: Tentáculos de Lodo
+    elemento:
+      - Morte
+    circulo: 3
+    execucao: Padrão
+    alcance: Médio
+    alvo: "Área: 6m de raio"
+    duracao: Cena
+    resistencia: null
+    referencia_pagina: 141
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Uma fenda se abre e dela surgem tentáculos de lodo que agarram e
+          esmagam inimigos. Tentáculos causam 4d6 de dano de Morte.
+
+
+          Agarra inimigos e causa 4d6 de dano.
+      - tipo: Verdadeira
+        descricao: Aumenta raio para 9m e dano para 6d6.
+        custo_extra: 5
+  - nome: Transfigurar Água
+    elemento:
+      - Energia
+    circulo: 3
+    execucao: Padrão
+    alcance: Longo
+    alvo: "Área: 30m de raio com água"
+    duracao: Cena
+    resistencia: Vontade parcial
+    referencia_pagina: 142
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Permite manipular o estado físico da água (Congelar, Derreter,
+          Evaporar ou Partir).
+
+
+          Manipula grandes massas de água.
+  - nome: Transfusão Vital
+    elemento:
+      - Sangue
+    circulo: 2
+    execucao: Padrão
+    alcance: Toque
+    alvo: 1 ser
+    duracao: Instantânea
+    resistencia: null
+    referencia_pagina: 142
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você transfere sua própria energia vital para curar o alvo.
+
+
+          Transfere PV próprio para o alvo (curando o alvo e perdendo a mesma
+          quantidade).
+      - tipo: Discente
+        requisito: 3º Círculo
+        descricao: Recupera até 50 PV.
+        custo_extra: 3
+  - nome: Velocidade Mortal
+    elemento:
+      - Morte
+    circulo: 2
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 ser
+    duracao: Sustentada
+    resistencia: null
+    referencia_pagina: 142
+    versoes:
+      - tipo: Base
+        descricao: |-
+          Distorce o tempo ao redor do alvo, tornando-o extremamente veloz.
+
+          Alvo recebe uma ação de movimento adicional por rodada.
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: Alvo recebe uma ação padrão adicional por rodada.
+        custo_extra: 7
+  - nome: Vomitar Pestes
+    elemento:
+      - Sangue
+    circulo: 3
+    execucao: Padrão
+    alcance: Médio
+    alvo: "Efeito: enxame Grande"
+    duracao: Sustentada
+    resistencia: Reflexos reduz à metade
+    referencia_pagina: 143
+    versoes:
+      - tipo: Base
+        descricao: >-
+          Você vomita um enxame de criaturas de Sangue que atacam inimigos.
+          Causa 5d12 de dano de Sangue por rodada.
+
+
+          Enxame causa 5d12 de dano.
+      - tipo: Verdadeira
+        descricao: Enxame se torna Enorme e ganha voo.
+        custo_extra: 5
+  - nome: Zerar Entropia
+    elemento:
+      - Morte
+    circulo: 3
+    execucao: Padrão
+    alcance: Curto
+    alvo: 1 pessoa
+    duracao: Cena
+    resistencia: Vontade parcial
+    referencia_pagina: 143
+    versoes:
+      - tipo: Base
+        descricao: |-
+          Reduz a entropia local, fazendo o alvo ficar lento e inerte.
+
+          Alvo fica lento.
+      - tipo: Verdadeira
+        requisito: 4º Círculo
+        descricao: Alvo fica paralisado (congelado no tempo).
+        custo_extra: 11
